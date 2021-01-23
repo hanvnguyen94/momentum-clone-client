@@ -2,14 +2,17 @@
 import React, { Fragment } from 'react'
 import Layout from './components/Layout'
 import Weather from './components/Weather'
-import Header from './components/Header'
+import Quote from './components/Quote'
+import Clock from './components/Clock'
+// import { Header } from 'react-bootstrap/lib/Modal'
 
 function App () {
   return (
     <Fragment>
-      <Header />
       <Layout />
       <Weather />
+      <Clock />
+      <Quote />
     </Fragment>
   )
 }
