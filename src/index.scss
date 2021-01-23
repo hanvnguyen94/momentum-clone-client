@@ -4,3 +4,84 @@ $secondary: #0081a7;
 $danger: #f07167;
 
 @import '~bootstrap/scss/bootstrap';
+
+*{
+  box-sizing: border-box;
+  margin: auto;
+  padding: auto;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+#root{
+  height: 100vh;
+}
+
+.clock-display {
+  font-size: 60px;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.quote-display {
+  display: flex;
+  margin: 70%;
+  background: rgba(0, 0, 0, 0);
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  // align-self: flex-end;
+}
+
+
+.top-row {
+  display: flex;
+  align-items: flex-start;
+  flex: 0 0 auto;
+}
+
+.top-center, .top-left, .top-right{
+  flex: 1 1 auto;
+  position: relative;
+  display: flex;
+}
+
+.top-right{
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  text-align: right;
+}
+
+//   // background-position: center;
+//   // background-repeat: no-repeat;
+//   // background-size: cover;
+//   min-height: 100vh;
+//   background: linear-gradient(rgba(0, 0, 0, 0.8), transparent);
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   background-position: center;
+//   color: white;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   text-align: center;
+// }

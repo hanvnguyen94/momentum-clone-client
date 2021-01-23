@@ -7,7 +7,7 @@ const Clock = () => {
 
   return (
     <Fragment>
-      <div>
+      <div className='clock-display'>
         <p>{time}</p>
         <p>Do It Now!</p>
       </div>

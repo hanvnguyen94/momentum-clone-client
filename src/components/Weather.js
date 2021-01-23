@@ -46,32 +46,25 @@ class ShowWeather extends Component {
          <Fragment>
            <h3>{city}</h3>
            <h3>{currWeather}</h3>
-           <h3>{currTemp}</h3>
+           <h3>{currTemp}°F</h3>
          </Fragment>
        )
      }
      return (
-       <div>
-         <div className="row">
-           <div className="col-sm-10 col-md-8 mx-auto mt-5">
-             <Form.Group controlId="zip">
-               <Form onSubmit={this.handleSubmit} inline>
-                 <FormControl
-                   type="text"
-                   className="mr-sm-2"
-                   required
-                   name="zip"
-                   value={this.state.zip}
-                   placeholder="Enter zip code"
-                   onChange={this.handleInputChange}
-                 />
-                 <Button type="submit" variant="outline-primary">Search</Button>
-               </Form>
-             </Form.Group>
-           </div>
-         </div>
+       <Form.Group controlId="zip">
+         <Form onSubmit={this.handleSubmit}>
+           <FormControl
+             type="text"
+             required
+             name="zip"
+             value={this.state.zip}
+             placeholder="Enter zip code"
+             onChange={this.handleInputChange}
+           />
+           <Button type="submit" variant="outline-primary">Search</Button>
+         </Form>
          {weatherDisplay}
-       </div>
+       </Form.Group>
      )
    }
 }

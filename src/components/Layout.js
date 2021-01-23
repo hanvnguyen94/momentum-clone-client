@@ -1,9 +1,19 @@
 // imports
-import React, { Component, Fragment } from 'react'
-// import axios from 'axios'
+import React, { Component } from 'react'
+import axios from 'axios'
 
 // unsplash api link
-// const apiUrl = 'https://api.unsplash.com/photos/random/?client_id=3RJ-uI47M6kgfpr5_vZCmbmHbVqLIIk09-mku8woFyQ'
+const apiUrl = 'https://api.unsplash.com/photos/random/?client_id=3RJ-uI47M6kgfpr5_vZCmbmHbVqLIIk09-mku8woFyQ'
+
+// const homeStyles = {
+//   display: 'flex',
+//   justifyContent: 'center',
+//   alignItems: 'center',
+//   backgroundSize: 'cover',
+//   backgroundPosition: 'fixed',
+//   height: '100vh',
+//   textAlign: 'center'
+// }
 
 class ShowPicture extends Component {
   constructor () {
@@ -14,16 +24,16 @@ class ShowPicture extends Component {
     }
   }
 
-  // async componentDidMount() {
-  //   // make http requests
-  //   await axios({
-  //     url: apiUrl,
-  //     method: 'GET'
-  //   })
-  //     // .then(res => console.log(res.data.urls.small))
-  //     .then(res => this.setState({ pictureUrl: res.data.urls.raw }))
-  //     .catch(console.error)
-  // }
+  async componentDidMount () {
+    // make http requests
+    await axios({
+      url: apiUrl,
+      method: 'GET'
+    })
+      // .then(res => console.log(res.data))
+      .then(res => this.setState({ pictureUrl: res.data.urls.regular }))
+      .catch(console.error)
+  }
 
   // render func
   render () {
@@ -37,10 +47,11 @@ class ShowPicture extends Component {
     }
 
     return (
-      <Fragment>
-        <h3>This picture is from Unsplash website</h3>
+      // <div className={homeStyles}>
+      <div className='background-img'>
         {pictureDisplay}
-      </Fragment>
+      </div>
+      // </div>
     )
   }
 }

@@ -41,15 +41,15 @@ class ShowQuote extends Component {
       quoteDisplay = (
         <Fragment>
           <p>{text}</p>
-          <p>- {author}</p>
+          <p>-{author}</p>
         </Fragment>
       )
     }
     return (
-      <Card>
+      <Card className='quote-display'>
         <Card.Body>
           <blockquote className="blockquote mb-0">
-            <p>{quoteDisplay}</p>
+            {quoteDisplay}
           </blockquote>
         </Card.Body>
       </Card>
