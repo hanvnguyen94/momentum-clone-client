@@ -6,11 +6,12 @@ import axios from 'axios'
 const apiUrl = 'https://api.unsplash.com/photos/random/?client_id=3RJ-uI47M6kgfpr5_vZCmbmHbVqLIIk09-mku8woFyQ'
 
 // const homeStyles = {
+//   width: '100vw',
 //   display: 'flex',
 //   justifyContent: 'center',
 //   alignItems: 'center',
 //   backgroundSize: 'cover',
-//   backgroundPosition: 'fixed',
+//   backgroundPosition: 'absolute',
 //   height: '100vh',
 //   textAlign: 'center'
 // }
@@ -43,15 +44,13 @@ class ShowPicture extends Component {
     if (!pictureUrl) {
       pictureDisplay = 'Loading forever...'
     } else {
-      pictureDisplay = <img style={{ width: '100%' }} src={pictureUrl} alt='random photos from unplash'/>
+      pictureDisplay = <img style={{ width: '100%', zIndex: '-1' }} src={pictureUrl} alt='random photos from unplash'/>
     }
 
     return (
-      // <div className={homeStyles}>
-      <div className='background-img'>
+      <div className='layout-display'>
         {pictureDisplay}
       </div>
-      // </div>
     )
   }
 }

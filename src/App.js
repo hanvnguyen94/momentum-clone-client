@@ -16,7 +16,9 @@ function App () {
       </div>
       <Layout />
       <Clock />
-      <Quote className='quote' />
+      <footer>
+        <Quote className='quote' />
+      </footer>
     </div>
 
   )
