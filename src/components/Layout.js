@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import axios from 'axios'
 
 // unsplash api link
-const apiUrl = 'https://api.unsplash.com/photos/random/?client_id=3RJ-uI47M6kgfpr5_vZCmbmHbVqLIIk09-mku8woFyQ'
+const apiUrl = 'https://api.unsplash.com/photos/random/?client_id=9puvGx-5gBgMrsEf_pUN-aqgDSVUJ-V_YV4yBtuBF1M'
 
 // const homeStyles = {
 //   width: '100vw',
