@@ -8,7 +8,7 @@ const Clock = () => {
   return (
     <Fragment>
       <div className='clock-display'>
-        <div style={{ fontSize: '100px', fontWeight: 'bold' }} className='time-display'>
+        <div style={{ fontSize: '110px', fontWeight: 'bold' }} className='time-display'>
           <p>{time}</p>
         </div>
         <div className='greeting-display'>

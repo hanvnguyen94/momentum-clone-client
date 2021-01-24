@@ -4,6 +4,8 @@ $secondary: #0081a7;
 $danger: #f07167;
 
 @import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 
 *{
   box-sizing: border-box;
@@ -15,6 +17,7 @@ html, body {
   height: 100%;
   width: 100%;
   color: white;
+  font-family: 'Poppins', sans-serif;
 }
 
 #root{
