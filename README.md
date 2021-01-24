@@ -4,10 +4,10 @@ My first React Client Site built as a clone of the famous Chrome extension "Mome
 It basically will generate new quotes, pictures and also trigger weather base on provided zip code everytime you visit.
 
 ## Important Links
-[OpenWeatherAPI](https://openweathermap.org/api)
-[UnsplashAPI](https://unsplash.com/developers)
-[GoQuotesAPI](https://goquotes.docs.apiary.io/#reference/get-random-quote(s))
-[MomentLibrary](https://momentjs.com/)
+- [OpenWeatherAPI](https://openweathermap.org/api)
+- [UnsplashAPI](https://unsplash.com/developers)
+- [GoQuotesAPI](https://goquotes.docs.apiary.io/#reference/get-random-quote(s))
+- [MomentLibrary](https://momentjs.com/)
 
 ## Planning Story
 This project was created with logic steps as below:
