@@ -41,7 +41,7 @@ class ShowQuote extends Component {
       quoteDisplay = (
         <Fragment>
           <p style={{ fontSize: '20px' }}>{text}</p>
-          <p style={{ fontSize: '15px', color: 'rgba(255, 255, 255, 0.927)' }}>-{author}</p>
+          <p style={{ fontSize: '16px', color: 'rgba(255, 255, 255, 0.927)' }}>-{author}</p>
         </Fragment>
       )
     }
