@@ -1,5 +1,5 @@
 // import logo from './logo.svg';
-import React from 'react'
+import React, { Fragment } from 'react'
 import Layout from './components/Layout'
 import Weather from './components/Weather'
 import Quote from './components/Quote'
@@ -8,19 +8,13 @@ import Clock from './components/Clock'
 
 function App () {
   return (
-    <div className='container'>
-      <div className='top-row'>
-        <div className='top-left'></div>
-        <div className='top-center'></div>
-        <div className='top-right'><Weather /></div>
-      </div>
+    <Fragment>
+      <Weather />
       <Layout />
       <Clock />
-      <footer>
-        <Quote className='quote' />
-      </footer>
-    </div>
-
+      {/* </div> */}
+      <Quote className='quote' />
+    </Fragment>
   )
 }
 export default App

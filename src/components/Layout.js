@@ -44,7 +44,7 @@ class ShowPicture extends Component {
     if (!pictureUrl) {
       pictureDisplay = 'Loading forever...'
     } else {
-      pictureDisplay = <img style={{ width: '100%', zIndex: '-1' }} src={pictureUrl} alt='random photos from unplash'/>
+      pictureDisplay = <img style={{ alignSelf: 'center', width: '100%', zIndex: '-1' }} src={pictureUrl} alt='random photos from unplash'/>
     }
 
     return (

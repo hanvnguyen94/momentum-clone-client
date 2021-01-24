@@ -8,11 +8,12 @@ const Clock = () => {
   return (
     <Fragment>
       <div className='clock-display'>
-        <div className='time-display'>
+        <div style={{ fontSize: '100px', fontWeight: 'bold' }} className='time-display'>
           <p>{time}</p>
         </div>
         <div className='greeting-display'>
-          <p>You Can Do It!</p>
+          <p style={{ fontSize: '40px' }}>You Can Do It</p>
+          <p style={{ textAlign: 'center', fontSize: '15px' }}>If you really try 😏</p>
         </div>
       </div>
 

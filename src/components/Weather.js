@@ -1,10 +1,11 @@
 import React, { Component, Fragment } from 'react'
 // import { withRouter } from 'react-router-dom'
 import axios from 'axios'
-// import messages from '../AutoDismissAlert/messages'
 import Form from 'react-bootstrap/Form'
 import FormControl from 'react-bootstrap/FormControl'
 import Button from 'react-bootstrap/Button'
+import Nav from 'react-bootstrap/Nav'
+// import Navbar from 'react-bootstrap/Navbar'
 
 const apiUrl = 'http://api.openweathermap.org/data/2.5/weather?units=imperial&appid=3edc9f0099d7cee3f5076a37e30609dc&zip='
 
@@ -51,20 +52,25 @@ class ShowWeather extends Component {
        )
      }
      return (
-       <Form.Group controlId="zip">
-         <Form onSubmit={this.handleSubmit}>
-           <FormControl
-             type="text"
-             required
-             name="zip"
-             value={this.state.zip}
-             placeholder="Enter zip code"
-             onChange={this.handleInputChange}
-           />
-           <Button type="submit" variant="outline-primary">Search</Button>
-         </Form>
-         {weatherDisplay}
-       </Form.Group>
+       <Nav className="justify-content-end">
+         <Nav.Item>
+           <Form.Group controlId="zip">
+             <Form onSubmit={this.handleSubmit} inline>
+               <FormControl
+                 type="text"
+                 className="mr-sm-2"
+                 required
+                 name="zip"
+                 value={this.state.zip}
+                 placeholder="Enter zip code"
+                 onChange={this.handleInputChange}
+               />
+               <Button className='search-btn' type="submit" variant="outline-primary">Search</Button>
+             </Form>
+           </Form.Group>
+           <div style={{ textAlign: 'center' }}>{weatherDisplay}</div>
+         </Nav.Item>
+       </Nav>
      )
    }
 }
