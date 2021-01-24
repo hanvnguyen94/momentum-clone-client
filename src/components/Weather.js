@@ -7,7 +7,7 @@ import Button from 'react-bootstrap/Button'
 import Nav from 'react-bootstrap/Nav'
 // import Navbar from 'react-bootstrap/Navbar'
 
-const apiUrl = 'http://api.openweathermap.org/data/2.5/weather?units=imperial&appid=3edc9f0099d7cee3f5076a37e30609dc&zip='
+const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?units=imperial&appid=3edc9f0099d7cee3f5076a37e30609dc&zip='
 
 class ShowWeather extends Component {
   constructor (props) {
