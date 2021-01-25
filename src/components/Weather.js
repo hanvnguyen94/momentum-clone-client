@@ -68,7 +68,7 @@ class ShowWeather extends Component {
                <Button className='search-btn' type="submit" variant="outline-primary">Search</Button>
              </Form>
            </Form.Group>
-           <div style={{ textAlign: 'center' }}>{weatherDisplay}</div>
+           <div style={{ border: '1px solid white', textAlign: 'center' }}>{weatherDisplay}</div>
          </Nav.Item>
        </Nav>
      )
